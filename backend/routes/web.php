@@ -17,3 +17,33 @@ Route::get('/contact', function () {
 });
 
 
+Route::get('/admin', function () {
+    return view('admin.Dashboard');
+});
+
+
+
+
+
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
+
+Route::fallback( function () {
+    return view('lib.notfound');
+});
+
+
+
+
+
+
+
+
+
